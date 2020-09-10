@@ -11,6 +11,6 @@ class Parser
   private
 
   def title(body)
-    Nokogiri::HTML(body).css("title").first.text.strip
+    Nokogiri::HTML(body).css("title")&.first&.text&.strip
   end
 end

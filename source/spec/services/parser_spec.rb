@@ -25,6 +25,12 @@ describe Parser do
       expect(service.call(url)).to eq(title)
     end
 
-    # TODO check if title is not provided
+    context "when not title provided" do
+      let(:body) { "<html></html>" }
+
+      it "returns nil" do
+        expect(service.call(url)).to be_nil
+      end
+    end
   end
 end
