@@ -1,0 +1,7 @@
+version: '2.0'
+services:
+  app:
+    build: .
+    command: irb
+    volumes:
+      - ./tmp:/app/tmp
