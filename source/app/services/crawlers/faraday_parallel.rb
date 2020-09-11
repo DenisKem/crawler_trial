@@ -1,6 +1,5 @@
 require 'typhoeus'
 require 'typhoeus/adapters/faraday'
-require 'nokogiri'
 require '../app/services/parsers/title'
 
 module Crawlers

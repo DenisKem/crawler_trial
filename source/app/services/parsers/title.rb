@@ -1,3 +1,5 @@
+require 'nokogiri'
+
 module Parsers
   class Title
     def call(content:)
