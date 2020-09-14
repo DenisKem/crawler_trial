@@ -2,6 +2,8 @@ version: '2.0'
 services:
   app:
     build: .
-    command: irb
+    command: /.startup.sh
     volumes:
+      - ./source:/app
       - ./tmp:/app/tmp
+      - ./gems:/bundle

@@ -1,6 +1,6 @@
 require 'typhoeus'
 require 'typhoeus/adapters/faraday'
-require '../app/services/parsers/title'
+require '/app/app/services/parsers/title'
 
 module Crawlers
   class FaradayParallel
